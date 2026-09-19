@@ -95,7 +95,7 @@ int main(void)
 
   while (1)
   {
-    PUSHBUTT = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0);
+    PUSHBUTT = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13);
     if (PUSHBUTT == 0)
     {
       HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
